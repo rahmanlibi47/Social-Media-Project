@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% load bootstrap3 %} {% block content %}
+
+<style>
+  #rssBlock8 {
+    position: absolute;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    top: 50px;
+    left: 0px;
+    height: 590px;
+    width: 400px;
+    overflow: auto;
+    float: center:
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transform;
+    -webkit-transform: translateX(100%);
+    }
+
+    .logView8 {
+      padding-top: 10px;
+      overflow: auto;
+    }
+
+    .marqueeStyle8 {
+      display: inline-block;
+
+    }
+
+    .marqueeStyle88 {
+      display: inline-block;
+    }
+</style>
+
+<div class="logView8" , id="rssBlock8">
+  <div class="marqueeStyle8">
+    <h1>Sign Up</h1>
+    <form class="marqueeStyle88" method="POST">
+      {% csrf_token %} {% bootstrap_form form %}
+      <input type="submit" value="Sign Up" class="btn btn-default" />
+    </form>
+  </div>
+
+  {% endblock %}
+</div>

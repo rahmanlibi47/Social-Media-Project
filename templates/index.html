@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block content %}
+
+<style>
+
+    #rssBlock{
+      position: absolute;
+      top: 0px;
+      color: white;
+      font-size: 60px;
+      margin: 110px;
+      left:0px;
+      height: 80px;
+      width:1070px;
+      overflow: auto;
+    }
+
+    .cnnContents {
+      padding-top: 10px;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: 'Museo';
+    }
+
+    .marqueeStyle {
+      display:inline-block;
+      -webkit-animation: scrolling-left1 5s linear infinite;
+      animation: scrolling-left1 5s linear infinite;
+    }
+
+    .marqueeStyle2 {
+      display:inline-block;
+      -webkit-animation: scrolling-left2 5s linear infinite;
+      animation: scrolling-left2 5s linear infinite;
+      animation-delay: 1s;
+    }
+    @keyframes scrolling-left1 {
+        0% {transform: translateX(100%);
+            -webkit-transform: translateX(100%);}
+          100% {transform: translateX(-100%);
+              -webkit-transform: translateX(-100%);}
+    }
+    @keyframes scrolling-left2 {
+        0% {transform: translateX(0%);
+            -webkit-transform: translateX(0%);}
+          100% {transform: translateX(-200%);
+              -webkit-transform: translateX(-200%);}
+    }
+
+    @-webkit-keyframes scrolling-left1 {
+        0% {-webkit-transform: translateX(100%);}
+          100% {-webkit-transform: translateX(-100%);}
+    }
+    @-webkit-keyframes scrolling-left2 {
+        0% {-webkit-transform: translateX(0%);}
+          100% {-webkit-transform: translateX(-200%);}
+    }
+
+  </nav>
+</style>
+<canvas id="canvas"></canvas>
+<div id="rssBlock">
+  <p class="cnnContents">
+    <span class="marqueeStyle">&nbsp; Welcome to SpaceTalk</span>
+  </p>
+</div>
+
+{% endblock %}

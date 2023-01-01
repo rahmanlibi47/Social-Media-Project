@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block content %}
+
+<style>
+  #rssBlock9 {
+    position: absolute;
+    top: 150px;
+    right: 1400px;
+    height: 1000px;
+    width: 1000px;
+    overflow: auto;
+    float: center:
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transform;
+    -webkit-transform: translateX(100%);
+    }
+
+    .logView9 {
+      padding-top: 10px;
+      overflow: auto;
+    }
+
+    .marqueeStyle9 {
+      display: inline-block;
+
+    }
+
+    .marqueeStyle99 {
+      display: inline-block;
+    }
+</style>
+
+<div class="logView9" id="rssBlock9">
+  <div class="marqueeStyle9">
+    <div class="marqueeStyle99" <div class="row">
+      {% block pregroup %}{% endblock %} {% block group_content %}{% endblock %}
+      {% block postgroup %}{% endblock %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

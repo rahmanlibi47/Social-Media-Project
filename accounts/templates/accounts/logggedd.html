@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% load bootstrap3 %} {% block content %}
+
+<style>
+  #rssBlock7 {
+      position: absolute;
+      top: 50px;
+      left: 0px;
+      height: 590px;
+      width: 507px;
+      overflow: auto;
+      float: center:
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logView7 {
+      padding-top: 10px;
+      overflow: auto;
+    }
+
+    .marqueeStyle7 {
+      display: inline-block;
+
+    }
+
+    .marqueeStyle77 {
+      display: inline-block;
+    }
+    @keyframes scrolling-left1 {
+      0% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+      }
+    }
+    @keyframes scrolling-left2 {
+      0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-200%);
+        -webkit-transform: translateX(-200%);
+      }
+    }
+
+    @-webkit-keyframes scrolling-left1 {
+      0% {
+        -webkit-transform: translateX(100%);
+      }
+      100% {
+        -webkit-transform: translateX(-100%);
+      }
+    }
+
+    @-webkit-keyframes scrolling-left2 {
+      0% {
+        -webkit-transform: translateX(0%);
+      }
+      100% {
+        -webkit-transform: translateX(-200%);
+      }
+  }
+</style>
+<div class="logView7" , id="rssBlock7">
+  <div class="marqueeStyle7">
+    <h1>Login</h1>
+    <form class="marqueeStyle77" method="POST">
+      {% csrf_token %} {% bootstrap_form form %}
+      <input type="submit" value="Login" class="btn btn-default" />
+    </form>
+  </div>
+</div>
+
+{% endblock %}

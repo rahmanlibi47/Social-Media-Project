@@ -1,0 +1,82 @@
+{% extends "base.html" %} {% block content %}
+
+<style>
+  #rssBlockA {
+    position: absolute;
+    top: 0px;
+    color: white;
+    font-size: 60px;
+    margin: 110px;
+    left: 0px;
+    height: 80px;
+    width: 1070px;
+    overflow: hidden;
+  }
+
+  .logViewA {
+    padding-top: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Museo";
+  }
+
+  .marqueeStyleA {
+    display: inline-block;
+    -webkit-animation: scrolling-left1 10s linear infinite;
+    animation: scrolling-left1 10s linear infinite;
+  }
+
+  .marqueeStyleAA {
+    display: inline-block;
+    -webkit-animation: scrolling-left2 10s linear infinite;
+    animation: scrolling-left2 10s linear infinite;
+    animation-delay: 0s;
+  }
+  @keyframes scrolling-left1 {
+    0% {
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+    }
+  }
+  @keyframes scrolling-left2 {
+    0% {
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-200%);
+      -webkit-transform: translateX(-200%);
+    }
+  }
+
+  @-webkit-keyframes scrolling-left1 {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  }
+  @-webkit-keyframes scrolling-left2 {
+    0% {
+      -webkit-transform: translateX(0%);
+    }
+    100% {
+      -webkit-transform: translateX(-200%);
+    }
+  }
+</style>
+
+<div class="logViewA" , id="rssBlockA">
+  <div class="marqueeStyleA">
+    <div class="marqueeStyleAA">
+      <h1>Thanks for visiting! Come back soon!</h1>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

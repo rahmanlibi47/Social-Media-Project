@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block content %}
+
+<style>
+  #rssBlockB {
+    position: absolute;
+    top: 150px;
+    right: 1400px;
+    height: 1000px;
+    width: 1000px;
+    overflow: auto;
+    float: center:
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transform;
+    -webkit-transform: translateX(100%);
+    }
+
+    .logViewB {
+  	padding-top: 10px;
+  	overflow: auto;
+    }
+
+    .marqueeStyleB {
+  	display: inline-block;
+
+    }
+
+    .marqueeStyleBB {
+  	display: inline-block;
+    }
+</style>
+
+{% comment %} <div class="logViewB" id="rssBlockB"> {% endcomment %}
+  <div class="marqueeStyleB">
+    <div class="marqueeStyleBB" <div class="row">
+        <div class="posts-page" id= "rssBlockB">
+              {% block prepost%}{% endblock %} {% block post_content %}{%
+              endblock %} {% block post_post%}{% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %} {% endblock %}
+</div>
